@@ -23,7 +23,8 @@ def browser(request):
         options = Options()
         options.add_experimental_option('prefs', {'intl.accept_languages': language})
         browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-        #browser = webdriver.Chrome(options=options)
+
+        # browser = webdriver.Chrome(options=options)
         # if you have webdriver manager installed, you can use code below:
 
     elif browser_name == "firefox":
